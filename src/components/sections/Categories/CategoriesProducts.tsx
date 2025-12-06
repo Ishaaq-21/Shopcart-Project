@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Category, Product } from "../../../../sanity.types";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { client } from "@/sanity/lib/client";
 import Loader from "@/components/ui/customUI/Loader";

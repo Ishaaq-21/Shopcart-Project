@@ -1,5 +1,4 @@
 import Container from "@/components/common/Container";
-import NoOrders from "@/components/sections/orders/NoOrders";
 import OrdersComponent from "@/components/sections/orders/OrderComponent";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollBar } from "@/components/ui/scroll-area";

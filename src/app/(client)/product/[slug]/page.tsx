@@ -14,10 +14,8 @@ import {
   Share2,
   SkipBack,
   Square,
-  StepBack,
   Truck,
 } from "lucide-react";
-import Tabs from "@/components/ui/customUI/ProductTabs";
 import ProductTabs from "@/components/ui/customUI/ProductTabs";
 
 const subInfo: { icon: ReactNode; info: string }[] = [
