@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shopcart Project
+
+This is a Next.js e-commerce application built with a modern tech stack.
+
+## Features
+
+- **Next.js 16:** Utilizes the latest features of the Next.js framework.
+- **Sanity.io:** Content management for products and other site content.
+- **Clerk:** User authentication and management.
+- **Stripe:** Secure payment processing.
+- **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+- **TypeScript:** For type-safe code.
 
 ## Getting Started
 
-First, run the development server:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You need to have Node.js and npm (or yarn/pnpm) installed on your machine.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  Clone the repository:
+    ```bash
+    git clone <repository-url>
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd shopcart-project
+    ```
+3.  Install the dependencies:
+    ```bash
+    npm install
+    ```
+4.  Set up your environment variables. Create a `.env.local` file in the root of the project and add the necessary keys for Clerk, Sanity, and Stripe.
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+In the project directory, you can run the following commands:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `npm run dev`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Runs the application in development mode with Turbopack. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page will automatically reload when you make changes.
 
-## Deploy on Vercel
+### `npm run build`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Builds the application for production. The build artifacts will be stored in the `.next/` directory.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### `npm run start`
+
+Starts a production server. This should be run after building the application.
+
+### `npm run lint`
+
+Runs ESLint to analyze the code for potential errors and style issues.
+
+## Key Dependencies
+
+- **@clerk/nextjs:** For user authentication.
+- **@radix-ui/\*:** A collection of unstyled, accessible UI components.
+- **@sanity/image-url, @sanity/vision, next-sanity, sanity:** For integrating the Sanity.io CMS.
+- **stripe:** For handling payments with Stripe.
+- **tailwindcss:** For styling the application.
+- **embla-carousel-react:** For creating carousels.
+- **lucide-react:** A library of beautiful and consistent icons.
+- **react-hot-toast:** For adding notifications to the app.
